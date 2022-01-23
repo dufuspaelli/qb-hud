@@ -7,7 +7,7 @@ Config.MinimumStress = 50 -- Minimum Stress Level For Screen Shaking
 Config.MinimumSpeedUnbuckled = 50 -- Going Over This Speed Will Cause Stress
 Config.MinimumSpeed = 100 -- Going Over This Speed Will Cause Stress
 Config.DisablePoliceStress = true -- If true will disable stress for people with the police job
-COnfig.DisableStress = true
+COnfig.DisableStress = false -- If true will disable stress completely
 
 -- Stress
 
