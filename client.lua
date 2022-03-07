@@ -769,7 +769,7 @@ CreateThread(function()
             if IsPedInAnyVehicle(ped, false) then
                 if exports['LegacyFuel']:GetFuel(GetVehiclePedIsIn(ped, false)) <= 20 then -- At 20% Fuel Left
                     if Menu.isLowFuelChecked then
-                        TriggerServerEvent("InteractSound_SV:PlayOnSource", "pager", 0.10)
+                        TriggerServerEvent("InteractSound_SV:PlayOnSource", "pager", 0.05)
                         QBCore.Functions.Notify(Lang:t("notify.low_fuel"), "error")
                         Wait(60000) -- repeats every 1 min until empty
                     end
@@ -918,7 +918,7 @@ end)
 -- Minimap update
 CreateThread(function()
     while true do
-        SetRadarBigmapEnabled(false, false)
+       -- SetRadarBigmapEnabled(false, false)
         SetRadarZoom(1000)
         Wait(500)
     end
