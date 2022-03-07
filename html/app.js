@@ -424,7 +424,22 @@ const app = Vue.createApp({
   },
 })
 
-app.use(Quasar, { config: {} })
+app.use(Quasar, {
+  config: {
+    brand: {
+      primary: '#15274e',
+      secondary: '#ffd24f',
+      accent: '#4f69ff',
+
+      dark: '#342d2b',
+
+      positive: '#4fff55',
+      negative: '#4f1515',
+      info: '#584fff',
+      warning: '#4f1526'
+    }
+  }
+})
 app.mount('#menu')
 
 document.onkeyup = function (data) {
@@ -748,9 +763,9 @@ const playerHud = {
         this.showHealth = true;
       } 
       if (data.playerDead === false) {
-        this.healthColor = "#3FA554";
+        this.healthColor = "#4fff55";
       } else {
-        this.healthColor = "#ff0000";
+        this.healthColor = "#4fff55";
         this.health = 100;
       }
 
@@ -767,7 +782,7 @@ const playerHud = {
       if (data.armor <= 0) {
         this.armorColor = "#FF0000";
       } else {
-        this.armorColor = "#326dbf";
+        this.armorColor = "#4f69ff";
       }
 
       if (data.dynamicHunger == true) {
@@ -860,7 +875,7 @@ const playerHud = {
       if (data.talking && data.radio) {
         this.talkingColor = "#D64763";
       } else if (data.talking) {
-        this.talkingColor = '#FFFF3E';
+        this.talkingColor = '#584fff';
       } else {
         this.talkingColor = "#FFFFFF";
       }

@@ -102,6 +102,12 @@ div#q-loading-bar { display: none!important; } /* makes sure there's no ajax loa
   left: 3vh;
   bottom: 0.2vw;
 }
+#playerHud > div > div > svg > circle.q-circular-progress__center.text-grey-1 {
+ color: rgba(0,0,0,0.2) !important
+}
+#playerHud > div > div:nth-child(2) > svg {
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+}
 
 .q-ml-xl {
   margin-left: -22px!important; /* Change this to space radials */
@@ -110,7 +116,7 @@ div#q-loading-bar { display: none!important; } /* makes sure there's no ajax loa
 /* Vehicle HUD */
 
 speed:after {
-  content: "MPH"; /* If using KPH change this content from MPH */
+  content: ""; /* If using KPH change this content from MPH */
   display: block;
   padding-top: 3px;
   padding-left: 2px;
@@ -135,7 +141,7 @@ speed {
   color: #fff; 
   text-align: center;
   font-weight: 600;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7); 
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.3), 1px -1px 0 rgba(0,0,0, 0.3), -1px 1px 0 rgba(0,0,0, 0.3), 1px 1px 0 rgba(0,0,0, 0.3); 
 }
 
 altitude {
