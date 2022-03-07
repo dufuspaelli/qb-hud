@@ -10,7 +10,6 @@ Config.DisablePoliceStress = true -- If true will disable stress for people with
 Config.DisableStress = true -- If true will disable stress completely
 
 -- Stress
-
 Config.WhitelistedWeaponArmed = { -- weapons specifically whitelisted to not show armed mode
     -- miscellaneous
     `weapon_petrolcan`,
@@ -118,6 +117,8 @@ Config.EffectInterval = {
 
 Config.Menu = {
     isOutMapChecked = false, -- isOutMapChecked
+    isOutCompassChecked = false, -- isOutMapChecked
+    isCompassFollowChecked = true, -- isCompassFollowChecked
     isOpenMenuSoundsChecked = true, -- isOpenMenuSoundsChecked
     isResetSoundsChecked = true, -- isResetSoundsChecked
     isListSoundsChecked = true, -- isListSoundsChecked
@@ -135,8 +136,11 @@ Config.Menu = {
     isToggleMapBordersChecked = true, -- isToggleMapBordersChecked
     isDynamicEngineChecked = true, -- isDynamicEngineChecked
     isDynamicNitroChecked = true, -- isDynamicNitroChecked
-    isHideCompassChecked = false, -- isHideCompassChecked
-    isHideStreetsChecked = false, -- isHideStreetsChecked
+    isChangeCompassFPSChecked = true, -- isChangeCompassFPSChecked
+    isCompassShowChecked = true, -- isShowCompassChecked
+    isShowStreetsChecked = true, -- isShowStreetsChecked
+    isPointerShowChecked = true, -- isPointerShowChecked
+    isDegreesShowChecked = true, -- isDegreesShowChecked
     isCineamticModeChecked = false, -- isCineamticModeChecked
     isToggleMapShapeChecked = 'square', -- isToggleMapShapeChecked
 }
