@@ -1079,39 +1079,20 @@ CreateThread(function()
         end
 		if heading == '360' then heading = '0' end
             if heading ~= lastHeading then
-			    if IsPedInAnyVehicle(player) then
-                    local crossroads = getCrossroads(player)
-                    SendNUIMessage ({ 
-                        action = 'update', 
-                        value = heading 
-                    })
-                    updateBaseplateHud({
-                        show,
-                        crossroads[1],
-                        crossroads[2],
-                        Menu.isCompassShowChecked,
-                        Menu.isShowStreetsChecked,
-                        Menu.isPointerShowChecked,
-                        Menu.isDegreesShowChecked,
-                    })
-			    else
-                    if Menu.isOutCompassChecked then
-                        SendNUIMessage ({ 
-                            action = 'update', 
-                            value = heading 
-                        })
-                        SendNUIMessage ({
-                            action = 'baseplate',
-                            show = true,
-                            showCompass = true,
-                        })
-                    else
-                        SendNUIMessage ({
-                            action = 'baseplate',
-                            show = false,
-                        })
-                    end
-			    end
+                local crossroads = getCrossroads(player)
+                SendNUIMessage ({ 
+                    action = 'update', 
+                    value = heading 
+                })
+                updateBaseplateHud({
+                    show,
+                    crossroads[1],
+                    crossroads[2],
+                    Menu.isCompassShowChecked,
+                    Menu.isShowStreetsChecked,
+                    Menu.isPointerShowChecked,
+                    Menu.isDegreesShowChecked,
+                })
 	        end
 		    lastHeading = heading
 	    end
