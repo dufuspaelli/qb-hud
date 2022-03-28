@@ -116,8 +116,8 @@ Config.EffectInterval = {
 }
 
 Config.Menu = {
-    isOutMapChecked = false, -- isOutMapChecked
-    isOutCompassChecked = false, -- isOutMapChecked
+    isOutMapChecked = true, -- isOutMapChecked
+    isOutCompassChecked = true, -- isOutMapChecked
     isCompassFollowChecked = true, -- isCompassFollowChecked
     isOpenMenuSoundsChecked = true, -- isOpenMenuSoundsChecked
     isResetSoundsChecked = true, -- isResetSoundsChecked
@@ -133,10 +133,10 @@ Config.Menu = {
     isDynamicOxygenChecked = true, -- isDynamicOxygenChecked
     isChangeFPSChecked = true, -- isChangeFPSChecked
     isHideMapChecked = false, -- isHideMapChecked
-    isToggleMapBordersChecked = true, -- isToggleMapBordersChecked
+    isToggleMapBordersChecked = false, -- isToggleMapBordersChecked
     isDynamicEngineChecked = true, -- isDynamicEngineChecked
     isDynamicNitroChecked = true, -- isDynamicNitroChecked
-    isChangeCompassFPSChecked = true, -- isChangeCompassFPSChecked
+    isChangeCompassFPSChecked = false, -- isChangeCompassFPSChecked
     isCompassShowChecked = true, -- isShowCompassChecked
     isShowStreetsChecked = true, -- isShowStreetsChecked
     isPointerShowChecked = true, -- isPointerShowChecked
