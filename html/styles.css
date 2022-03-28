@@ -216,13 +216,13 @@ altitude {
 .street-container {
   position: relative;
   top: 0.5vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vh;
   letter-spacing: 0.7px;
   text-decoration: none;
   font-style: normal;
   font-variant: small-caps;
-  text-transform: none;
+  text-transform: uppercase;
   font-weight: 800;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
 }
@@ -288,7 +288,7 @@ altitude {
   top: -0.5vh;
   height: 3.5vh;
   padding-left: 0.12vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.3vh;
   letter-spacing: 0.7px;
   text-decoration: none;
