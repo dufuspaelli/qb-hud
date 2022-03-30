@@ -344,7 +344,7 @@ RegisterNetEvent("hud:client:LoadMap", function()
         -- 0.025 = map raised up
         -- 0.262 = map stretched
         -- 0.315 = map shorten
-        SetMinimapComponentPosition('minimap_blur', 'L', 'B', -0.01 + minimapOffset, 0.025, 0.262, 0.300)
+        SetMinimapComponentPosition('minimap_blur', 'L', 'B', 0.0 + minimapOffset, 0.025, 0.262, 0.300)
         SetBlipAlpha(GetNorthRadarBlip(), 0)
         SetRadarBigmapEnabled(true, false)
         SetMinimapClipType(0)
@@ -982,7 +982,7 @@ end)
 CreateThread(function()
     while true do
        -- SetRadarBigmapEnabled(false, false)
-        SetRadarZoom(1000)
+        --SetRadarZoom(1000)
         Wait(500)
     end
 end)
