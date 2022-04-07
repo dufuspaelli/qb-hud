@@ -58,7 +58,7 @@ RegisterNetEvent('hud:server:RelieveStress', function(amount)
     end
     Player.Functions.SetMetaData('stress', newStress)
     TriggerClientEvent('hud:client:UpdateStress', src, newStress)
-    TriggerClientEvent('QBCore:Notify', src, Lang:t("notify.stress_removed"))
+    --TriggerClientEvent('QBCore:Notify', src, Lang:t("notify.stress_removed"))
 end)
 
 QBCore.Functions.CreateCallback('hud:server:HasHarness', function(source, cb)
