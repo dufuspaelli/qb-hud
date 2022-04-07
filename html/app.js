@@ -1018,7 +1018,7 @@ app2.mount("#ui-container");
 const vehHud = {
   data() {
     return {
-      speedometer: 66,
+      speedometer: 75,
       fuelgauge: 69,
       altitudegauge: 75,
       fuel: 0,
