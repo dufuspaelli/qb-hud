@@ -642,7 +642,7 @@ local function getFuelLevel(vehicle)
     local updateTick = GetGameTimer()
     if (updateTick - lastFuelUpdate) > 2000 then
         lastFuelUpdate = updateTick
-        lastFuelCheck = math.floor(exports['LegacyFuel']:GetFuel(vehicle))
+        lastFuelCheck = math.floor(100)
     end
     return lastFuelCheck
 end
@@ -804,7 +804,7 @@ CreateThread(function()
     end
 end)
 
--- Low fuel
+--[[ -- Low fuel
 CreateThread(function()
     while true do
         if LocalPlayer.state.isLoggedIn then
@@ -822,7 +822,7 @@ CreateThread(function()
         Wait(10000)
     end
 end)
-
+ ]]
 -- Money HUD
 
 RegisterNetEvent('hud:client:ShowAccounts', function(type, amount)
